@@ -11,6 +11,7 @@ import com.design.pattern.proxy.dynamicProxy.MakeMoneyInte;
  */
 public class MakeMoneyImp implements MakeMoneyInte
 {
+
     public void earnMoney(int many)
     {
         System.out.println("挣到的钱为：" + many);
