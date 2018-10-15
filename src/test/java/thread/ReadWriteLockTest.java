@@ -14,15 +14,15 @@ import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
 
 /**
  * <p>读写锁 </p>
- * 
+ *
  * @author dongxiaobin-0751
  * @version 2016年10月11日
  * @see ReadWriteLockTest
- * @since
  */
+
 /**
  * 〈一句话功能简述〉 〈功能详细描述〉
- * 
+ *
  * @author dongxiaobin-0751
  * @version 2016年10月11日
  * @see ReadWriteLockTest

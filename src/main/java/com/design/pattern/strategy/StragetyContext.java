@@ -1,11 +1,8 @@
 package com.design.pattern.strategy;
 
 /**
- * <h1>环境(Context)角色</h1>
- * <p>
- * 持有一个Strategy的引用
- * <p>
- * 
+ * <h1>环境(Context)角色</h1> <p> 持有一个Strategy的引用 <p>
+ *
  * @author Administrator
  * @date 2015年7月16日 下午4:27:15
  */

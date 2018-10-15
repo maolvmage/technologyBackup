@@ -1,16 +1,12 @@
 package com.design.pattern.observable;
 
+
 import java.util.Observable;
 
+
 /**
- * <h1>具体被观察角色</h1>
- * <p>
- * 在JAVA中自带了被观察者角色类java.util.Observable
- * <p>
- * <p>
- * 因此，与业务相关的被观察者角色需要继承该类
- * <p>
- * 
+ * <h1>具体被观察角色</h1> <p> 在JAVA中自带了被观察者角色类java.util.Observable <p> <p> 因此，与业务相关的被观察者角色需要继承该类 <p>
+ *
  * @author Administrator
  * @date 2015年7月17日 下午2:04:29
  */
@@ -28,7 +24,7 @@ public class ConcreateObservable extends Observable
 
     /**
      * 改变当前对象的状态
-     * 
+     *
      * @param _state
      *            状态参数
      */

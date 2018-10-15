@@ -32,7 +32,7 @@ public class TestSemaphore
                         // 获取许可
                         semp.acquire();
                         System.out.println("Accessing: " + NO);
-                        Thread.sleep((long)(Math.random() * 10000));
+                        Thread.sleep((long)(2000));
                         // 访问完后，释放
                         semp.release();
                         System.out.println("-----------------" + semp.availablePermits());
@@ -47,5 +47,6 @@ public class TestSemaphore
         }
         // 退出线程池
         exec.shutdown();
+        System.out.println("-----");
     }
 }

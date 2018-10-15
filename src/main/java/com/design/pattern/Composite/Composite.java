@@ -1,13 +1,12 @@
 package com.design.pattern.Composite;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
- * <h1>树枝节点角色</h1>
- * <p>
- * 该角色包含一个子集节点的集合
- * </p>
+ * <h1>树枝节点角色</h1> <p> 该角色包含一个子集节点的集合 </p>
  */
 
 public class Composite extends Component
@@ -35,12 +34,10 @@ public class Composite extends Component
     @Override
     public void action()
     {
-        if (chilComponents.isEmpty())
-            return;
+        if (chilComponents.isEmpty()) return;
         for (Component component : chilComponents)
         {
-            System.out.println("执行" + component.getClass().getCanonicalName()
-                    + "角色行为");
+            System.out.println("执行" + component.getClass().getCanonicalName() + "角色行为");
             component.action();
         }
     }

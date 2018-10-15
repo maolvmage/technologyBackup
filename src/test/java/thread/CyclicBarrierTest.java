@@ -5,7 +5,6 @@
 package thread;
 
 
-import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
@@ -30,7 +29,6 @@ public class CyclicBarrierTest
             try
             {
                 cyclic.await();
-                Thread.sleep(Math.abs(new Random().nextInt() % 10000));
                 System.out.println(soldier + "任务完成");
                 cyclic.await();
             }
@@ -70,8 +68,9 @@ public class CyclicBarrierTest
     }
 
     public static void main(String[] args)
+        throws InterruptedException, BrokenBarrierException
     {
-        final int N = 10;
+        final int N = 5;
         Thread[] allSoldier = new Thread[N];
         boolean flag = false;
         CyclicBarrier cyclic = new CyclicBarrier(N, new BarrierRun(flag, N));
@@ -80,5 +79,6 @@ public class CyclicBarrierTest
             allSoldier[i] = new Thread(new Soldier("士兵" + i, cyclic));
             allSoldier[i].start();
         }
+        System.out.println("-----------");
     }
 }

@@ -9,8 +9,8 @@ import net.sf.cglib.proxy.MethodProxy;
 
 
 /**
- * @Description: <h1>cglib代理类</h1>
  * @author Administrator
+ * @Description: <h1>cglib代理类</h1>
  * @date 2015年7月7日 下午3:13:43
  */
 public class CgilbProxy implements MethodInterceptor
@@ -19,7 +19,7 @@ public class CgilbProxy implements MethodInterceptor
 
     /**
      * 通过动态代理执行方法
-     * 
+     *
      * @param obj
      *            类对象
      * @param method
@@ -43,7 +43,7 @@ public class CgilbProxy implements MethodInterceptor
 
     /**
      * 创建代理对象
-     * 
+     *
      * @param _target
      *            目标代理对象
      * @return 动态代理对象

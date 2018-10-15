@@ -1,10 +1,7 @@
 package com.design.pattern.Composite;
 
 /**
- * <h1>叶子节点角色</h1>
- * <p>
- * 该节点属于其他的树枝节点，该节点不具备添加和删除节点的功能行为
- * </p>
+ * <h1>叶子节点角色</h1> <p> 该节点属于其他的树枝节点，该节点不具备添加和删除节点的功能行为 </p>
  */
 
 public class Leaf extends Component

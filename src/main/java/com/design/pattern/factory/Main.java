@@ -1,14 +1,16 @@
 package com.design.pattern.factory;
 
+
 import com.design.pattern.factory.methodFactory.AbstractMethodFatory;
 import com.design.pattern.factory.methodFactory.impl.FactoryA;
 import com.design.pattern.factory.simpleFactory.SimpleFactory;
+
 
 public class Main
 {
     public static void main(String[] args)
     {
-        simple();
+        // simple();
         System.out.println("----------------------");
         methodFactory();
     }

@@ -14,8 +14,8 @@ public class Main
         // 两个被调停者
         Colleague cA = new ConcreteColleagueA(mediator);
         Colleague cB = new ConcreteColleagueB(mediator);
-        ((ConcreteMediator) mediator).setConcreteColleagueB(cB);
-        ((ConcreteMediator) mediator).setConcreteColleagueA(cA);
+        ((ConcreteMediator)mediator).setConcreteColleagueB(cB);
+        ((ConcreteMediator)mediator).setConcreteColleagueA(cA);
         cA.action();
     }
 

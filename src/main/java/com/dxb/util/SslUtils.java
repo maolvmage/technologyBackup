@@ -4,12 +4,7 @@ package com.dxb.util;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLSession;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
+import javax.net.ssl.*;
 
 
 public class SslUtils
@@ -58,7 +53,7 @@ public class SslUtils
 
     /**
      * 忽略HTTPS请求的SSL证书，必须在openConnection之前调用
-     * 
+     *
      * @throws Exception
      */
     public static void ignoreSsl()

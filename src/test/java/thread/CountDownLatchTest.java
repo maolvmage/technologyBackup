@@ -5,7 +5,6 @@
 package thread;
 
 
-import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -21,7 +20,7 @@ public class CountDownLatchTest implements Runnable
     {
         try
         {
-            Thread.sleep(new Random().nextInt(10) * 1000);
+            Thread.sleep(1000);
         }
         catch (InterruptedException e)
         {
@@ -31,12 +30,14 @@ public class CountDownLatchTest implements Runnable
         count.countDown();
     }
 
-    public static void main(String[] args) throws InterruptedException
+    public static void main(String[] args)
+        throws InterruptedException
     {
         ExecutorService executor = Executors.newFixedThreadPool(10);
         for (int i = 0; i < 10; i++ )
         {
-            executor.submit(test);
+            CountDownLatchTest test1 = new CountDownLatchTest();
+            executor.submit(test1);
         }
         count.await();
         System.out.println("---------");

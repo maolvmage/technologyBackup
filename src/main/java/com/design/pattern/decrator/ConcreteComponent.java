@@ -1,11 +1,8 @@
 package com.design.pattern.decrator;
 
 /**
- * <h1>具体构件(ConcreteComponent)角色</h1>
- * <p>
- * 定义一个将要接收附加责任的类
- * </p>
- * 
+ * <h1>具体构件(ConcreteComponent)角色</h1> <p> 定义一个将要接收附加责任的类 </p>
+ *
  * @author Administrator
  * @date 2015年7月16日 下午4:03:07
  */

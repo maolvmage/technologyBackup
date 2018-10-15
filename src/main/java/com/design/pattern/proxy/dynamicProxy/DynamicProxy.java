@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * <h1>动态代理类</h1> <p> 动态代理只能实现实现了接口的类，具有一定的局限性 </p>
- * 
+ *
  * @author Administrator
  * @date 2015年7月7日 下午1:56:31
  */

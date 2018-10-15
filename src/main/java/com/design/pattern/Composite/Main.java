@@ -1,10 +1,7 @@
 package com.design.pattern.Composite;
 
 /**
- * <h1>用一句话描述</h1>
- * <p>
- * 详细描述
- * </p>
+ * <h1>用一句话描述</h1> <p> 详细描述 </p>
  */
 
 public class Main

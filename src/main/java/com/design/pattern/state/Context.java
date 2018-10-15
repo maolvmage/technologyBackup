@@ -1,11 +1,8 @@
 package com.design.pattern.state;
 
 /**
- * <h1>状态模式的上下文类</h1>
- * <p>
- * 状态的迁移以及行为的变化在此上下文中进行
- * <p>
- * 
+ * <h1>状态模式的上下文类</h1> <p> 状态的迁移以及行为的变化在此上下文中进行 <p>
+ *
  * @author Administrator
  * @date 2015年7月16日 下午9:42:17
  */
@@ -18,7 +15,7 @@ public class Context
 
     /**
      * 构造函数
-     * 
+     *
      * @param _state
      *            传递的状态参数
      */
